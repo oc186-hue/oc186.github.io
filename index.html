@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver Chen | Rutgers Accounting</title>
+    <style>
+        :root {
+            --rutgers-navy: #002147; 
+            --white: #ffffff;
+            --accent-blue: #0071bc;
+            --bg-light: #f4f7f9;
+            --text-dark: #2d3436;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        /* CENTERED HEADER WITH BACKGROUND */
+        header {
+            position: relative;
+            padding: 100px 20px 80px;
+            text-align: center;
+            color: var(--white);
+            background-image: linear-gradient(rgba(0, 33, 71, 0.75), rgba(0, 33, 71, 0.75)), url('Assets/Background.image.jpeg');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 5px solid var(--accent-blue);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--white);
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .header-content {
+            backdrop-filter: blur(3px);
+            padding: 15px 30px;
+            border-radius: 10px;
+            background: rgba(0, 33, 71, 0.4);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 8px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: -40px auto 50px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        section {
+            background: var(--white);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: var(--rutgers-navy);
+            border-left: 6px solid var(--accent-blue);
+            padding-left: 18px;
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .company {
+            color: var(--accent-blue);
+            font-style: italic;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            color: #444;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #e9f2f9;
+            color: var(--rutgers-navy);
+            padding: 7px 18px;
+            border-radius: 25px;
+            margin: 6px 4px;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--rutgers-navy);
+            color: white;
+            padding: 14px 35px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn:hover { 
+            background: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Assets/ProfilePic.jpeg" alt="Oliver Chen" class="profile-img">
+        <div class="header-content">
+            <h1>Oliver Chen</h1>
+            <p class="tagline">Accounting Student | Rutgers University</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Education</h2>
+            <div class="exp-header">
+                <span>Rutgers University</span>
+                <span>September 2023 - Present</span>
+            </div>
+            <span class="company">Candidate for B.S. in Accounting (GPA: 3.3)</span>
+            <p><strong>Relevant Coursework:</strong> Statistics, Operations Management, Marketing, Supply Chain, and Financial Accounting.</p>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            
+            <div style="margin-bottom: 30px;">
+                <div class="exp-header">
+                    <span>Bookkeeper</span>
+                    <span>July 2025 – Present</span>
+                </div>
+                <span class="company">Gisler, Mahler, Lazoff, Sacharow LLC | Haskell, NJ</span>
+                <ul>
+                    <li>Reconcile accounts using QuickBooks and online banking platforms to ensure accuracy of financial records.</li>
+                    <li>Accurately process transactions against bank statements and resolve discrepancies.</li>
+                    <li>Monitored electronic financial documentations, invoices, and client records in an organized filing system.</li>
+                    <li>Generated reports on account status, outstanding balances, and reconciliations for management review.</li>
+                    <li>Support compliance-related documentation through precise recordkeeping and review.</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <div class="exp-header">
+                    <span>Bookkeeper</span>
+                    <span>June 2025 – Present</span>
+                </div>
+                <span class="company">Haskell Eye Center | Haskell, NJ</span>
+                <ul>
+                    <li>Managed client records and tracked payments.</li>
+                    <li>Kept accurate and organized financial records.</li>
+                    <li>Utilized proactive communication to reduce overtime payments.</li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <div class="exp-header">
+                    <span>Virtual Office Assistant</span>
+                    <span>September 2023 – September 2025</span>
+                </div>
+                <span class="company">NJ Small Business Development Center | New Brunswick, NJ</span>
+                <ul>
+                    <li>Managed and organized electronic documents, emails, and client communications.</li>
+                    <li>Assisted customers with event registration and inquiries, interacting with 200+ individuals weekly.</li>
+                    <li>Created and implemented an online flyer system used by 20+ employees.</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="exp-header">
+                    <span>Cashier / Cook</span>
+                    <span>November 2015 – Present</span>
+                </div>
+                <span class="company">Guan Long Chinese Restaurant | Butler, NJ</span>
+                <ul>
+                    <li>Accurately processed cash and credit transactions, maintaining precise records.</li>
+                    <li>Delivered consistent customer service in a fast-paced environment.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Leadership & Activities</h2>
+            <div class="exp-header">
+                <span>Team Leader</span>
+                <span>Jan 2024 – May 2024</span>
+            </div>
+            <span class="company">Management Skill Course | New Brunswick, NJ</span>
+            <ul>
+                <li>Managed team-based projects, coordinating tasks to ensure deadlines were met.</li>
+                <li>Strengthened leadership, organization, and communication skills through collaborative work.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technical Skills & Interests</h2>
+            <div class="skill-tag">QuickBooks</div>
+            <div class="skill-tag">Microsoft Excel</div>
+            <div class="skill-tag">Canva</div>
+            <div class="skill-tag">Gym</div>
+            <div class="skill-tag">Cooking</div>
+        </section>
+
+        <section style="text-align: center;">
+            <h2>Connect With Me</h2>
+            <p>186 Bevier Road, Piscataway, NJ 08854</p>
+            <div style="margin: 20px 0;">
+                <a href="mailto:oc186@scarletmail.rutgers.edu" class="btn">Email Me</a>
+            </div>
+            <p style="font-weight: bold; font-size: 1.1rem;">Phone: 267-736-7032</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 Oliver Chen | Rutgers University Portfolio
+    </footer>
+
+</body>
+</html>
